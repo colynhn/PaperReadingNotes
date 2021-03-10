@@ -42,10 +42,86 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-2-5
 
+**Scalable Multi Corpora Neural Language Models for ASR（2019 Amazon Alexa）**
+
+
 **#Tag**
+
+ASR
+
 **#Knowledge Points**
+
+LM：language model.   NLM: Neural language model.
+
+由于NLM有不受限制的context，所以在进行decode的时候就会产生指数增加的计算量
+
+第一种做法：先使用n-gram语言模型进行一次解码，然后再用NLM去再lattice上进行二次解码（缺点是在进行一个解码的时候，二次解码一直在等待，时间是累加的；而且在一边解码的ngram可以会损失一些假设）
+
+第二种做法：即本文的优化
+
 **#Innovation**
+
+本文所解决的问题：
+
+1 异构数据适应性训练问题 
+  
+  （1）Data mixing
+  
+      首先将不同domain的数据使用ngram模型进行训练，线性插值，求出权重
+      
+      再根据权重从不同domain中抽取训练数据加入到mini-batch中进行训练
+  
+  （2）Transfer learning through fine tuning
+      
+      使用非领域数据进行NLM的训练，然后再使用领域数据进行参数调节
+  
+  （3）两者结合的方式
+  
+      The model is first pre-trained on the out-of-domain data, and the data mixing strategy is used during the fine tuning stage
+  
+2 模型快速推理的解决方案
+
+  （1）Self-normalized models 
+      
+      权重量化等（不理解，等用到再进一步了解）
+      
+      https://www.gtcevent.cn/session-catalog/ 参考即可，是一种模型加速的一种方式； 比如：基于 Tensor Core 的 CNN INT8 定点训练加速
+      
+  
+  （2）Post-training Quantization
+  
+3 Generating synthetic data for first-pass LM （并没有感觉到好在哪儿？？？）
+
+  从训练好的NLM中去抽取sub-words，作为ngram的值，再去进行一遍解码
+  
+实验
+
+首先，对于out of domain dataset pre-train + mixture（out of domain + in domain） 效果最好，PPL最低
+
+小的知识点：reference 参考（也就是真实标签，即标注文本序列）
+          
+          hypothesis 假说/假定（也就是模型识别出来的文本，即预测文本序列）
+
+概述：（不一定准确）
+
+1 寻求最优的线性加权参数lamda
+  
+  minimize perplexity：lamda * in-doamin_n-gram_mdoel+(1-lamda) * out-of-domain_n-gram_model 
+  
+2 在上述的基础上（存在疑问），分配给各domain数据集score（表示关联性），根据score比例决定贡献给train-data比例，解决数据稀疏性问题
+
+3 如何把神经网络语言模型在不增加明显时延的情况下，合并到带有n-gram语言模型的ASR系统中：
+
+  （1）首先将传入的数据通过具有常规n-gram语言模型的语音识别器传递，然后使用神经模型完善第一个模型的假设
+  
+  （2）two-pass approach：first pass已经将概率数目降下来了，所以second pass就可以仅仅只考虑降下来之后的这部分概率（使用噪声对比估计进行训练）
+  
+  （3）使用噪声对比估计可以将基于词典的多维（比如词典是百万，需要百万级别）的概率选择计算转化为二分类
+
 **#Question**
+
+
+
 
 # 2021-1-29
 
