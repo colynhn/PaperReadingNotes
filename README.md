@@ -90,11 +90,8 @@ ASR
 
 以上三点为wer值和其他性能的一种这种折中 Language model
 
-对比
-
-based on RNN-T model, 而RNN-T可以看作是CTC的改进版，不是一个input对应一个output，而是一个input对应多个output( 即复制encoder的outputs tokens进行decoder)，即为encoder-decoder结构
-
-缺点：RNNs are difficult to compute in parallel
+对比 based on RNN-T model, 而RNN-T可以看作是CTC的改进版，不是一个input对应一个output，而是一个input对应多个output( 即复制encoder的outputs tokens进行decoder)
+即为encoder-decoder结构；缺点：RNNs are difficult to compute in parallel
 
 相较于RNNs的优点：
 
