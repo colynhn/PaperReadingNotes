@@ -1,22 +1,74 @@
 # PaperReadingWeekly
 
+  Reading notes of some recent papers on NLP, ASR, ML, etc.
 
+ （using command + F you can find the Tag that you want）
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 # 2021-3-12
 
+**Learning Task-Oriented Dialog with Neural Network Methods（2018）**
+
 **#Tag**
+
+    SLU
+
 **#Knowledge Points**
+
+    无    
+
 **#Innovation**
+
+    CMU的一篇博士论文，如果想要了解2018年之前的SLU的研究现状，是值得细细阅读的一篇好论文
+
 **#Question**
+
+    无
+
 
 # 2021-3-5
 
+**Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling（2016）**
+
 **#Tag**
+
+    SLU、Intent Detection、Slot Filing
+
 **#Knowledge Points**
+
+    intent detection：意图检测 可以视为语义分类任务 ，如SVMs、NN
+
+    slot filling：槽位填充 可以视为序列标注任务（NER，命名实体识别）： maximum entropy Markov models (MEMMs)、CRFs、RNNs
+
+    semantic：语义的
+
+    slot filling 的对齐是显示的，如rnn可以做到对齐，单纯的slot filling任务不需要额外的对齐手段（对齐一般存在于input 和 output不一样长的情况）
+
+    以往的joint的方案是 使用一个model train，然后去fine-tune适应两个任务
+
 **#Innovation**
+
+    本文所探讨
+    
+        本文主要讨论如何在encoder-decoder的nn中去应用已知的slot filling中的对齐信息；
+
+        如何利用encoder-decoder的attention的机制去改善slot-filling的model；
+
+        如何将intent detection和slot filling结合去进行joint优化
+    
+    模型
+    
+        将传统的bi-rnn加入attention进行比较，并且是将intent detection 和 slot filling进行joint训练在bi-rnn的最后一个output进行copy，一部分用于intent detection，一部分进行slot filling的decoder的initial hidden input，借助encoder的hidden outputs去进行alignment，以及attention的context信息去预测下一个label，整体decoder就是一个序列标注问题
+
+    效果
+    
+        在2016年，在ATIS数据集上打到了SOTA的效果，其中intent detection为2%-2.5%的error rate以及slot filling为95.5%-96%（仁者见仁，智者见智）
+
+
 **#Question**
+
+    无
 
 # 2021-2-26
 
@@ -24,7 +76,7 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 **#Tag**
 
-
+    ALBERT
 
 **#Knowledge Points**
 
