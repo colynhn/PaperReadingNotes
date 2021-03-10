@@ -65,9 +65,13 @@ ASR
 **#Knowledge Points**
 
 end2end主流的DL框架:
+
 （1）CTC (Connectionist Tem- poral Classification)
+
 （2）RNN-T (可以看作是CTC的一种改进)
+
 （3）RNN-AED（RNN-Attention encoder-decoder, LAS model的不同说法）
+
 （4）Transformer-AED （best-performance）
 
 其中：AED:  Attention-based Encoder- Decoder (AED)
@@ -76,9 +80,13 @@ end2end主流的DL框架:
 
 DL中的正则化方法：
 （1）BN：Batch Normalization          纵向规范化（使用较多）
+
 （2）LN：Layer Normalization           横向规范化（使用较多）
+
 （3）WN： Weight Normalization      参数规范化
+
 （4）CN： Cosine Normalization        余弦规范化
+
 
 **#Innovation**
 
