@@ -27,10 +27,43 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-2-19
 
+**BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding（2018）**
+
 **#Tag**
+
+    BERT
+
 **#Knowledge Points**
+
+    BERT：**B**idirectional **E**ncoder **R**epresentations from **T**ransformers
+
+    train from scratch：从头训练学习
+
+    将模型训练拉入 pre-training + fine-tune阶段
+
+    pre-trained language model 分为两种：feature-based 和 fine-tuning
+
+    不管是ELMO还是openAI GPT，都是单向的语言模型（基于传统语言模型假设）
+
 **#Innovation**
+
+    (1) Masked LM
+    
+    (2) Next Sentence Prediction (NSP)
+    
+    (3) using Transformer Encoder (可实现并行化)
+    
+    (4) 将NLP任务拉入 pre-train + fine-tune 时代
+
 **#Question**
+    
+    BERT中的WordPiece如何做
+    
+    WordPiece字面理解是把word拆成piece一片一片；使用BPE（Byte-Pair Encoding）双字节编码(WordPiece中的一种)，即生成subword
+    
+    可参考 https://www.cnblogs.com/huangyc/p/10223075.html 生成过程，但是中文一般就是使用字
+    
+    BERT中fine-tune就进行该如何进行（实际操作）(doing)
 
 
 # 2021-2-12
