@@ -49,10 +49,40 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-1-29
 
+**Evaluating Approaches to Personalizing Language Models（2020）**
+
 **#Tag**
+
+ASR
+
 **#Knowledge Points**
+
+（1）（The assumption being made is that people of similar demographics tend to write similarly）即相似社会属性关系的人说话习惯也差不多（如性别、年纪、性格等）
+
+（2） 个性化语言模型也是一个Domain adaptation problem
+
+（3） Perplexity不能用于评价不同词典的model，因为小的词典的语言模型就会替换更多的词为<UNK>，会严重影响最终的结果
+  
+（4） 拿到一个深度学习网络，如何构建模型：模型种类 + loss func + 超参数
+
+（5） 使用的语言模型依然是n-gram和rnnLM（LSTM LM）较多，也可用在纠错中
+
+
 **#Innovation**
+
+介绍三种语言模型个性化的方法：
+
+（1）个性化数据模型和老模型做插值融合
+
+（2）使用个性化数据对老模型进行参数调节
+
+（3）add data 继续 training
+
+
 **#Question**
+
+无
+
 
 # 2021-1-22
 
