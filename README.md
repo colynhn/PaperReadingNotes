@@ -70,9 +70,26 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-1-8
 
+**Transformer-Transducer: End-to-End Speech Recognition with Self-Attention (2019 Facebook)**
+
 **tag**
+
+ASR
+
 **Knowledge Points**
+
+无
+
 **Innovation**
+
+利用transformer替换RNN-T的encoder中的RNN，便于并行计算
+
+利用convolutional approaches代替transformer本身的位置信息(position encoding)，防止sequense的时序错乱问题
+
+利用truncated self-attention 代替transformer中原有的multi-head attention，实现streamable read and 识别
+
+以上三点为wer值和其他性能的一种这种折中 Language model
+
 **Question**
 
 # 2021-1-1
