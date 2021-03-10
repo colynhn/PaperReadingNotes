@@ -35,10 +35,24 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-2-12
 
+**LSTM Language Models for LVCSR in First-Pass Decoding and Lattice-Rescoring（2019）**
+
 **#Tag**
+
+    ASR
+
 **#Knowledge Points**
+
+    无
+
 **#Innovation**
+
+    主要是在big dataset、big vocabulary的条件下，通过使用char CNN + 改进的softmax去达到加速的目的，并且比较了KN n-gram模型和我RNNLM（LSTM）以及不同units的效果；得出结论ensemble的效果最好
+
 **#Question**
+
+    无
+
 
 # 2021-2-5
 
