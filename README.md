@@ -82,15 +82,33 @@ ASR
 
 **Innovation**
 
-利用transformer替换RNN-T的encoder中的RNN，便于并行计算
+#利用transformer替换RNN-T的encoder中的RNN，便于并行计算
 
-利用convolutional approaches代替transformer本身的位置信息(position encoding)，防止sequense的时序错乱问题
+#利用convolutional approaches代替transformer本身的位置信息(position encoding)，防止sequense的时序错乱问题
 
-利用truncated self-attention 代替transformer中原有的multi-head attention，实现streamable read and 识别
+#利用truncated self-attention 代替transformer中原有的multi-head attention，实现streamable read and 识别
 
 以上三点为wer值和其他性能的一种这种折中 Language model
 
+#对比
+
+based on RNN-T model, 而RNN-T可以看作是CTC的改进版，不是一个input对应一个output，而是一个input对应多个output( 即复制encoder的outputs tokens进行decoder)，即为encoder-decoder结构
+
+缺点：RNNs are difficult to compute in parallel
+
+相较于RNNs的优点：
+
+Compared with RNNs：the attention mechanism is non-recurrent and can compute in parallel easily; the attention mechanism can ”attend” to longer contexts explicitly
+
+CTC假设每一个输出的token都是独立的，而RNN-T正是改善了这一点，即通过增加前一个非空 output token的输入
+
+RNN-T其中均是每一帧input vector在经过decoder后的output token上操作， 即属于encoder-decoder framework
+
+在没有LM的情况下，RNN-T优于CTC
+
 **Question**
+
+无
 
 # 2021-1-1
 
