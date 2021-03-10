@@ -11,7 +11,7 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 # 2021-2-12
 # 2021-2-5
 # 2021-1-29
-# 2021/1/22
-# 2021/1/15
-# 2021/1/8
-# 2021/1/1
+# 2021-1-22
+# 2021-1-15
+# 2021-1-8
+# 2021-1-1
