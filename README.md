@@ -1,8 +1,10 @@
 # PaperReadingWeekly
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
   Reading notes of some recent papers on NLP, ASR, ML, etc.
 
- （using command + F you can find the Tag that you want）
+  Using command + F you can find the Tag that you want.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
