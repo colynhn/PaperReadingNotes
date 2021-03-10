@@ -18,3 +18,9 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 **CTC: Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks (2006)**
 
+**tag**
+**Knowledge Points**
+**Innovation**
+**Question**
+
+
