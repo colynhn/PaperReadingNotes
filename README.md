@@ -86,7 +86,9 @@ ASR
 **Knowledge Points**
 
 #CTC loss仅仅是深度学习训练时的loss表示，解决序列化问题（如序列标注），目的在于实现input和output的alignment; 在loss目标函数之前还是要自己进行网络的搭建，如RNN、CNN等
+
 #CTC decoder在进行decoder时，用到类似于HMM中的前后向算法，计算score; 插入空白标签，便于解码
+
 #在解码时加入language model，有助于解码正确率的提高
 
 **Innovation**
