@@ -63,16 +63,29 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 # 2021-1-15
 
-**tag**
-**Knowledge Points**
-**Innovation**
-**Question**
+**Estimation of gap between current language models and human performance（2017）**
+
+**#Tag**
+
+ASR
+
+**#Knowledge Points**
+
+无
+
+**#Innovation**
+
+文章主要对比了LM中的 ngram model、ME model、RNN with ME model & RNN/LMSM NNLM四种model的效果以及和人类的水平的对比实验（采用众包方式）
+
+**#Question**
+
+无
 
 # 2021-1-8
 
 **Transformer-Transducer: End-to-End Speech Recognition with Self-Attention (2019 Facebook)**
 
-**#tag**
+**#Tag**
 
 ASR
 
