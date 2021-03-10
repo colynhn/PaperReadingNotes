@@ -1,1 +1,3 @@
-# PaperReadingWeekly: some small notes of the reading paper every week.
+# PaperReadingWeekly
+
+# # BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
