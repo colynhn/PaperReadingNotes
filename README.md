@@ -79,11 +79,13 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 **CTC: Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks (2006)**
 
-**tag**
+**Tag**
 
 ASR
 
 **Knowledge Points**
+
+CTC loss: ctc loss 仅仅是深度学习训练时的loss表示，解决序列化问题（如序列标注），目的在于实现input和output的alignment; 在loss目标函数之前还是要自己进行网络的搭建，如RNN、CNN等
 
 **Innovation**
 
