@@ -8,6 +8,27 @@
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+# 2021-3-12
+
+**BERT for Joint Intent Classification and Slot Filling（2019）**
+
+**#Tag**
+
+    SLU
+
+**#Knowledge Points**
+
+       
+
+**#Innovation**
+
+    
+
+**#Question**
+
+    
+
 # 2021-3-12
 
 **Learning Task-Oriented Dialog with Neural Network Methods（2018）**
