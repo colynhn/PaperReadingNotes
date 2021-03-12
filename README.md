@@ -66,7 +66,7 @@
 
     semantic：语义的
 
-    slot filling 的对齐是显示的，如rnn可以做到对齐，单纯的slot filling任务不需要额外的对齐手段（对齐一般存在于input 和 output不一样长的情况）
+    slot filling 的对齐是显式的，如rnn可以做到对齐，单纯的slot filling任务不需要额外的对齐手段（对齐一般存在于input 和 output不一样长的情况）
 
     以往的joint的方案是 使用一个model train，然后去fine-tune适应两个任务
 
