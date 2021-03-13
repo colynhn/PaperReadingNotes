@@ -19,7 +19,49 @@
 
 **#Knowledge Points**
 
-       
+    NLU Models 大致可以分为两类：Independent modeling approaches、Joint modeling approaches
+    
+    Independent modeling approaches
+    
+    (1) Intent classification
+    
+        CNN :  Convolutional neural networks for sentence classification(EMNLP 2014)
+               
+               Character-level convolutional networks for text classification(NIPS 2015)
+        
+        LSTM : Recurrent neural network and LSTM models for lexical utterance classification(INTERSPEECH 2015)
+        
+        Attention Based CNN : Attention based convolutional neural networks for sentence classification(Interspeech 2016)
+        
+        Hierarchical Attention Networks : Hierarchical attention networks for document classification(NAACL HLT 2016)
+        
+        Adversarial Multi-task Learning : Adversarial multi-task learning for text classification(ACL 2017)
+    
+    (2) Slot filling
+    
+        CNN : Sequential convolutional neu- ral networks for slot filling in spoken language un- derstanding(Interspeech 2016)
+        
+        LSTM : Spoken lan- guage understanding using long short-term memory neural networks(2014 IEEE)
+        
+        RNN-EM : Recurrent neural networks with ex- ternal memory for spoken language understanding(NLPCC 2015)
+        
+        Encoder-labeler Deep LSTM : Leveraging sentence-level information with encoder LSTM for natural language understanding(2016)
+        
+        Joint Pointer and Attention : Improving slot filling in spoken language understanding with joint pointer and attention(ACL 2018)
+    
+    Joint modeling approaches
+    
+        CNN-CRF: Convolutional neural network based triangular CRF for joint in- tent detection and slot filling(2013 IEEE)
+        
+        RecNN : Joint semantic utterance classification and slot filling with recursive neural networks(2014 IEEE)
+        
+        Joint RNN-LSTM : Multi-domain joint semantic frame parsing using bi-directional RNN-LSTM（Interspeech 2016）
+        
+        Attention-based BiRNN : Attention-based recurrent neural network models for joint intent detection and slot filling(Interspeech 2016)(done 见 # 2021-3-5)
+        
+        Slot-gated Attention-based Model :  Slot-gated modeling for joint slot filling and intent prediction(NAACL-HLT 2018)
+        
+
 
 **#Innovation**
 
