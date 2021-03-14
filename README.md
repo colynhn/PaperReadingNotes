@@ -62,14 +62,21 @@
         Slot-gated Attention-based Model :  Slot-gated modeling for joint slot filling and intent prediction(NAACL-HLT 2018)
         
 
-
 **#Innovation**
 
+    （1）WordPiece 的处理: 为了适应WordPiece，在slot filling的序列标注任务中，使用子词的第一个标记的隐藏状态的output过softmax进行预测
+
+    （2）不用全部WordPiece的原因：（个人见解）为了对齐，这个对齐不是指input和output的对齐，是为了和句子的字级别slot对齐，
     
+        1）不管在汉语还是英语中，往往一个子词是没有什么独立意义的，仅仅代表辅助含意作用
+    
+        2）在Tansformer的多层encode，也就是bert中，slef-attention已经提取了足够的sub-word的信息，可以获得足够的表征信息；于为什么[CLS]的位置放前放后都可以的原理类似
+
+    （3）由于 Intent Detection 和 Slot Filling的任务关联性，所以采取两个目标函数的乘积形式进行联合优化
 
 **#Question**
 
-    
+    如果使用全部sub-word，并且一个word的概率等于所有sub-word的概率乘积，是否效果会好一点儿？（待验证）
 
 # 2021-3-12
 
