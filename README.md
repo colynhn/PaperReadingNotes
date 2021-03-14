@@ -73,10 +73,18 @@
         2）在Tansformer的多层encode，也就是bert中，slef-attention已经提取了足够的sub-word的信息，可以获得足够的表征信息；于为什么[CLS]的位置放前放后都可以的原理类似
 
     （3）由于 Intent Detection 和 Slot Filling的任务关联性，所以采取两个目标函数的乘积形式进行联合优化
+    
+    （4）Adding CRF for modeling slot label dependencies, on top of the joint BERT model
+    
+        可参考 End-to-end learning of semantic role labeling using recurrent neural networks(ACL 2015)
+        
+    （5）Joint训练会比非Joint训练效果差
 
 **#Question**
 
-    如果使用全部sub-word，并且一个word的概率等于所有sub-word的概率乘积，是否效果会好一点儿？（待验证，可能效果一般）
+    （1）如果使用全部sub-word，并且一个word的概率等于所有sub-word的概率乘积，是否效果会好一点儿？（待验证，可能效果一般）
+    
+    （2）sentence-level semantic frame accuracy 评价指标如何定义 ？
 
 # 2021-3-12
 
