@@ -23,6 +23,8 @@
     代码仓库：https://github.com/yizhen20133868/Awesome-SLU-Survey
     
     评价指标（也算是解答了2021-3-14中提到的accury的问题）
+    
+    工程中的多轮模型一般在论文中是以 Contextual SLU 表示
 
 **#Innovation**
 
@@ -33,14 +35,67 @@
     （1） single model vs. joint model
     
     （2） implicit joint model vs. explicit joint model（single flow interaction and bidirectional flow interaction）
+          
+          single flow interaction：一般是使用Intent信息指导Slot filling
+          
+          bidirectional flow interaction：Intent信息和Slot filling相互影响
+          
+          也是在优化SLU时，经常做的一件事情（另外，在rnn/bert的output中接CRF一般会有很好的效果，可以参考2021-3-14论文）
       
     （3） non pre-trained models vs. pre-trained models
     
-
+    从本文总结可以得出，pre-trained models 在ID和SF的指标中，均占到了很大的优势，主要是因为pre-trained model比如bert在预训练时很好的学习到了句子以及词语直接的潜在表示（类似于以前在ML中所做的特征工程）
+    
+    但是，在2016年使用Attention的RNN化石级模型仍然是具有很强的Intent Acc和Slot F1的，也不能忽视
+    
+    
+    将来的挑战和思考
+    
+    （1）Contextual SLU
+    
+        不同对话的历史信息（back-and-forth conversations）与当前对话的相关性
+        
+        对话过程中的长距离问题
+     
+    （2）Multi-Intent SLU
+    
+        如何整合多intent的问题
+        
+        数据lack问题
+    
+    （3）Chinese SLU
+    
+         在多个分词标准下，好好利用分词信息去（不仅仅是char级别）指导ID&SF（中文SLU）
+         
+         其中中文的开源数据集（CAIS）可在 CM-net: A novel collaborative memory network for spoken language understanding中寻找
+    
+    （4）Cross Domain SLU
+    
+        在数据lack的情况下，如何快速适应新的domain
+        
+        解答：在这里，本人解答一下这个问题，两个层面：关于跨domain问题，从model的角度可以使用增量训练去解决；也可将该问题下方到DST层面，将DST问题看作QA问题，去解新domain的问题
+        
+        而作者主要是从模型提取domain-shared feature角度解答这个问题（但是里边也涉及到知识迁移也就是迁移学习的问题）
+        
+        Zero-shot Setting：（也就是工业中的冷启动问题，没有任务训练数据，仍然可以将该问题下方到DST去解决）
+    
+    （5）Cross-Lingual SLU
+    
+        注释：An SLU system trained on En- glish can be directly applied to other low-resource languages
+        
+        其中具有语言之间的对齐问题（可能涉及到翻译中的相关技术，也可以参考语音识别中的相关技术，因为语音识别不涉及两种语言的问题，而是两类X，Y之间的转换，类似于语言的一种抽象）
+    
+    （6）Low-resource SLU
+    
+        包括 Few-shot SLU, Zero-shot SLU, and Unsupervised SLU，一般像这种问题都可以归结为工业上的冷启动问题，而对于冷地冻问题，均可以使用规则 or ML（CRF、HMM）等尝试
+        
+        关于 Unsupervised SLU，对工业界是很有帮助的；可参考 Dialogue state induction using neural latent variable models获取更多知识，主要还是更多以Intent和Slot的内在联系出发
+    
 **#Question**
 
-    
+      针对对话过程中的长距离对话问题，能否参考LSTM在解决长距离以来或者self-attention的长距离以来问题，将token的级别扩展到snetence去解决呢？
 
+    
 # 2021-3-14
 
 **BERT for Joint Intent Classification and Slot Filling（2019）**
