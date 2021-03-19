@@ -8,6 +8,38 @@
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+# 2021-3-19
+
+**A Survey on Spoken Language Understanding: Recent Advances and New Frontiers（2021）**
+
+**#Tag**
+
+    SLU
+
+**#Knowledge Points**
+
+    半个月前发表的论文，算是比较新的关于SLU的survey，特别是里边的对于SLU的研究论文以及代码实现的整理，对SLU的无论是初学者、研究者还是从业者，都很有帮助
+    
+    代码仓库：https://github.com/yizhen20133868/Awesome-SLU-Survey
+    
+    评价指标（也算是解答了2021-3-14中提到的accury的问题）
+
+**#Innovation**
+
+    本文就是一篇最新的研究总结：包括对现有研究的分类，整理；对将来研究挑战的陈述
+
+    将SLU的研究重新分类
+    
+    （1） single model vs. joint model
+    
+    （2） implicit joint model vs. explicit joint model
+      
+    （3） non pre-trained models vs. pre-trained models
+    
+
+**#Question**
+
+    
 
 # 2021-3-14
 
