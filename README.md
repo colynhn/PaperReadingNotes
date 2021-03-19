@@ -32,7 +32,7 @@
     
     （1） single model vs. joint model
     
-    （2） implicit joint model vs. explicit joint model
+    （2） implicit joint model vs. explicit joint model（single flow interaction and bidirectional flow interaction）
       
     （3） non pre-trained models vs. pre-trained models
     
