@@ -14,15 +14,30 @@
 
 **#Tag**
 
-    Regular-expression、FA-RNN
+    Regular-expression、FA-RNNs
 
 **#Knowledge Points**
 
-    无    
+    （1）这篇论文给人眼前一亮的感觉
+    
+        神经网络缺乏可解释性，需要大量的labeled data去train；基于规则方法（如正则表达式）不需要data进行训练，并且在大数据量的情况下不能运用数据，效果也不如大数据量下的NN
+    
+    （2）针对规则和NN相结合的研究
+    
+        1）使用规则去约束模型
+        
+           knowledge distillation、multi-task learning、
+        
+        2）设置新的架构（参考规则系统）
 
 **#Innovation**
 
-    CMU的一篇博士论文，如果想要了解2018年之前的SLU的研究现状，是值得细细阅读的一篇好论文
+    （1）FA-RNNs（finite-automaton recurrent neural networks）：上述基于规则和NN结合，既可以冷启动，也可以从数据中train（本文中的方法）。并且REs和FA-RNNs可以互相转化
+    
+        论文其中有句话：REs和有限状态机的等价性？（可以参考原论文Table 1 for answers）
+    
+
+    
 
 **#Question**
 
