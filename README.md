@@ -8,6 +8,26 @@
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+# 2021-3-x
+
+**Cold-Start and Interpretability: Turning Regular Expressions into Trainable Recurrent Neural Networks（EMNLP 2020）**
+
+**#Tag**
+
+    Regular-expression、FA-RNN
+
+**#Knowledge Points**
+
+    无    
+
+**#Innovation**
+
+    CMU的一篇博士论文，如果想要了解2018年之前的SLU的研究现状，是值得细细阅读的一篇好论文
+
+**#Question**
+
+    无
+
 # 2021-3-19
 
 **A Survey on Spoken Language Understanding: Recent Advances and New Frontiers（2021）**
