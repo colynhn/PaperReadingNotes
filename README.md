@@ -82,14 +82,18 @@
 
 **#Knowledge Points**
 
-    
+    无
 
 **#Innovation**
 
+    使用ConvLab-2进行Benchmark
     
-
+    ConvLab-2: https://github.com/thu-coai/ConvLab-2
+      
+  
 **#Question**
 
+    无
    
 # 2021-3-26
 
