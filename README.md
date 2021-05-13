@@ -72,7 +72,7 @@
 
 
 
-# 2021-4-2
+# Paper13
 
 **CrossWOZ: A Large-Scale Chinese Cross-Domain Task-Oriented Dialogue Dataset**
 
@@ -95,7 +95,7 @@
 
     无
    
-# 2021-3-26
+# Paper12
 
 **Cold-Start and Interpretability: Turning Regular Expressions into Trainable Recurrent Neural Networks（EMNLP 2020）**
 
@@ -131,7 +131,7 @@
 
     根据本论文的思路，是不是可以将神经网络的过程理解为一个寻找某条路径，打分的过程呢？
 
-# 2021-3-19
+# Paper11
 
 **A Survey on Spoken Language Understanding: Recent Advances and New Frontiers（2021）**
 
@@ -219,7 +219,7 @@
       针对对话过程中的长距离对话问题，能否参考LSTM在解决长距离以来或者self-attention的长距离以来问题，将token的级别扩展到snetence去解决呢？
 
     
-# 2021-3-14
+# Paper10
 
 **BERT for Joint Intent Classification and Slot Filling（2019）**
 
@@ -296,7 +296,7 @@
     
     （2）sentence-level semantic frame accuracy 评价指标如何定义 ？
 
-# 2021-3-12
+# Paper9
 
 **Learning Task-Oriented Dialog with Neural Network Methods（2018）**
 
@@ -317,7 +317,7 @@
     无
 
 
-# 2021-3-5
+# Paper8
 
 **Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling（2016）**
 
@@ -361,7 +361,7 @@
     无
     
 
-# 2021-2-12
+# Paper7
 
 **LSTM Language Models for LVCSR in First-Pass Decoding and Lattice-Rescoring（2019）**
 
@@ -382,7 +382,7 @@
     无
 
 
-# 2021-2-5
+# Paper6
 
 **Scalable Multi Corpora Neural Language Models for ASR（2019 Amazon Alexa）**
 
@@ -465,7 +465,7 @@
     无
 
 
-# 2021-1-29
+# Paper5
 
 **Evaluating Approaches to Personalizing Language Models（2020）**
 
@@ -502,7 +502,7 @@
     无
 
 
-# 2021-1-22
+# Paper4
 
 **On the Comparison of Popular End-to-End Models for Large Scale Speech Recognition（2020）**
 
@@ -545,7 +545,7 @@
     无
 
 
-# 2021-1-15
+# Paper3
 
 **Estimation of gap between current language models and human performance（2017）**
 
@@ -565,7 +565,7 @@
 
     无
 
-# 2021-1-8
+# Paper2
 
 **Transformer-Transducer: End-to-End Speech Recognition with Self-Attention (2019 Facebook)**
 
@@ -604,7 +604,7 @@
 
     无
 
-# 2021-1-1
+# Paper1
 
 **CTC: Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks (2006)**
 
